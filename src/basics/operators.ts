@@ -17,21 +17,7 @@ let myBook: Book = {
 }
 console.log(myBook);
 
-//Union type: either assignment is okay
-let article: Book | Newspaper;
-article = {
-    date: '2022-02-28'
-}
-console.log(article);
 
-//Intersection type: Must contain attributes of both
-let additionalArticle: NewspaperAdditionalAttributes & Newspaper;
-additionalArticle = {
-    article: 'Ukraine in trouble',
-    date: '2022-02-28',
-    section: 'Geo-politics'
-}
-console.log(additionalArticle);
 
 let number1: Array<number> = [1, 2, 3, 4, 5];
 
